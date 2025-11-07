@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACTOS | Condor Xtreme</title>
+  <link rel="stylesheet" href="contactos.css">
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div id="contenedor" style="background-color:white;">
+    <header>
+      <a href="https://www.condorxtreme.com/">
+        <p>Condor Xtreme</p>
+      </a>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="destino.html">DESTINOS</a></li>
+          <li><a href="#">CONTACTOS</a></li>
+          <li><a href="video.html">VIDEOS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h5>CONTACTOS</h5>
+
+    <main class="contacto-grid">
+      <!-- COLUMNA 1: INFORMACIÓN -->
+      <section class="info-contacto">
+        <h3>INFORMACIÓN DE CONTACTO</h3>
+        <table>
+          <tr>
+            <th>Dirección:</th>
+            <td>AV.Globo Terróqueo 7131.Lima Perú. I Jr. Noptuno 123 Urbanización Sol de Oro Los <td>
+          </tr>
+          <tr>
+            <th>Teléfonos:</th>
+            <td>+51 947 392 102 / 019 084 484</td>
+          </tr>
+          <tr>
+            <th>Correo:</th>
+            <td><a href="mailto:contact@condorxtreme.com">contact@condorxtreme.com</a></td>
+          </tr>
+        </table>
+        <h4>Horario de atención</h4>
+        <p>Lunes a Domingo de 8:00 a.m. a 6:00 p.m.</p>
+      </section>
+
+      <!-- COLUMNA 2: FORMULARIO -->
+      <section class="formulario">
+        <h3>ESCRÍBENOS</h3>
+        <form action="#" method="post" id="form-contacto">
+          <label for="nombre">Nombre y Apellido*</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="celular">Celular*</label>
+          <input type="tel" id="celular" name="celular" pattern="[0-9]{9}" placeholder="Ej: 987654321" required>
+
+          <label for="email">Correo electrónico*</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+          <label for="ruc">RUC (Opcional)</label>
+          <input type="text" id="ruc" name="ruc" pattern="[0-9]{11}" placeholder="Ej: 12345678901">
+
+          <label for="mensaje">Mensaje*</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <input type="submit" value="ENVIAR">
+        </form>
+      </section>
+
+      <!-- COLUMNA 3: MAPA -->
+      <section class="mapa">
+        <h3>UBÍCANOS</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.2334543487355!2d-77.08148302512108!3d-12.093470242534428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8d7a1ecb157%3A0x8e9b3e7e8a6c36f!2sExplanada%20Costa%20Verde%20Magdalena!5e0!3m2!1ses!2spe!4v1730760000000!5m2!1ses!2spe"
+          allowfullscreen="" loading="lazy"></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <h4>© Condor Xtreme 2024 Todos los derechos reservados</h4>
+      <div>
+        <address>
+          <ul>
+            <li>Explanada Costa Verde del Distrito de Magdalena del Mar</li>
+            <li>+51 947392102</li>
+            <li>contact@condorxtreme.com</li>
+          </ul>
+        </address>
+        <nav>
+          <p>Redes Sociales: </p>
+          <ul id="redes">
+            <li><a href="https://web.facebook.com/condorXtreme"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/condor_xtreme"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=51947392102"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.youtube.com/condorxtremeperu"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
